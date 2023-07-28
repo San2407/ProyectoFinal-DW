@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hive-Contacto</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../img/techhive-logo.png" alt="Logo de TechHive"></a>
+
+        <div class="barra">
+            <input class="busqueda" type="text" placeholder="Buscar productos">
+            <button type="submit">
+                <img class="imagenBusqueda" src="../img/lupa.png" alt="botón de búsqueda">
+            </button>
+        </div>
+
+        <div class="carritoDeCompras">
+            <a href="carrito.html"><img src="../img/shopping-cart.png" alt="carrito de compras"></a>
+        </div>
+    </header>
+
+    <div>
+        <nav class="categorias">
+            <ul>
+                <li> <a href="productos.html">Productos</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+                <li> <a href="empresa.html">Empresa</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Consulta? Contáctanos!</h1>
+        <form class="formulario">
+            <div class="linea1">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre">
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido">
+            </div>
+
+            <div class="correoElectronico">
+                <label for="Correo Electronico">Correo Electrónico:</label>
+                <input type="email" id="Correo Electronico">
+            </div>
+
+            <div class="asunto">
+                <label for="opcion">Asunto:</label>
+                <select id="opcion" name="option">
+                    <option value="option1">Consulta general</option>
+                    <option value="option2">Soporte técnico</option>
+                    <option value="option3">Seguimiento de pedido</option>
+                    <option value="option4">Devoluciones y reembolsos</option>
+                </select>
+            </div>
+
+            <textarea class="textArea" name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+
+            <div class="checkBox">
+                <input type="checkbox" id="tyc">
+                <label for="tyc">Acepto los términos y condiciones</label>
+
+                <input type="checkbox" id="priv">
+                <label for="priv">Acepto las políticas de privacidad</label>
+            </div>
+
+            <div class="buttonForm">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="productos.html">Productos</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
+            <li> <a href="empresa.html">Empresa</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href=""><img src="../img/redes/facebook.png" alt="icono de facebook"></a>
+            </li>
+
+            <li>
+                <a href=""> <img src="../img/redes/twitter.png" alt="icono de twitter"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

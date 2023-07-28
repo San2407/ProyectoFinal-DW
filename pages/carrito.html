@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Hive-Carrito</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../img/techhive-logo.png" alt="Logo de TechHive"></a>
+
+        <div class="barra">
+            <input class="busqueda" type="text" placeholder="Buscar productos">
+            <button type="submit">
+                <img class="imagenBusqueda" src="../img/lupa.png" alt="botón de búsqueda">
+            </button>
+        </div>
+
+        <div class="carritoDeCompras">
+            <a href="carrito.html"><img src="../img/shopping-cart.png" alt="carrito de compras"></a>
+        </div>
+    </header>
+
+    <div>
+        <nav class="categorias">
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="carritoCaja">
+        <h1>Tu Carrito</h1>
+            <section class="carrito">
+                <div class="carritoProducto">
+                    <h2>Producto</h2>
+                    <img src="../img/productos/ejemploCarrito.png" alt="Heladera" />
+                    <p>Nombre del Producto 1</p>
+                    <p>Descripción del producto</p>
+                </div>
+
+                <div class="carritoPrecio">
+                    <h2>Precio</h2>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="carritoCantidad">
+                    <h2>Cantidad</h2>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="carritoSubtotal">
+                    <h2>Subtotal</h2>
+                    <p>$100.00</p>
+                </div>
+            </section>
+
+            <section class="resumen">
+                <h2>Resumen</h2>
+                <p>Items: 2</p>
+                <p>Subtotal: $100.00</p>
+                <p>Envío: $10.00</p>
+                <p>Total: $110.00</p>
+                <button>Finalizar Compra</button>
+            </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href=""><img src="../img/redes/facebook.png" alt="icono de facebook" /></a>
+            </li>
+            <li>
+                <a href=""><img src="../img/redes/twitter.png" alt="icono de twitter" /></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
