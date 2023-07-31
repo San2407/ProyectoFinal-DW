@@ -7,40 +7,76 @@
     <title>Tech Hive-Inicio</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- CSS -->
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img class="logo" src="img/techhive-logo.png" alt="Logo de TechHive"></a>
-
-        <div class="barra">
-            <input class="busqueda" type="text" placeholder="Buscar productos">
-            <button type="submit">
-                <img class="imagenBusqueda" src="img/lupa.png" alt="botón de búsqueda">
+<body class="container-fluid">
+    <header class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/techhive-logo.png"
+                    alt="Logo de TechHive"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <nav class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/empresa.html">Empresa</a>
+                    </li>
+                </ul>
+                <form class="d-flex barraDeBusqueda" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn colorBtn" type="submit"><img class="lupa" src="img/lupa.png" alt=""></button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/carrito.html"><img class="carritoDeCompras"
+                            src="img/shopping-cart.png" alt="carrito de compras"></a>
+                </li>
+            </nav>
         </div>
-
-        <div class="carritoDeCompras">
-            <a href="pages/carrito.html"><img src="img/shopping-cart.png" alt="carrito de compras"></a>
-        </div>
-
     </header>
-        <nav class="categorias">
-            <ul>
-                <li> <a href="pages/productos.html">Productos</a></li>
-                <li> <a href="pages/contacto.html">Contacto</a></li>
-                <li> <a href="pages/empresa.html">Empresa</a></li>
-            </ul>
-        </nav>
-
     <main>
-        <section class="coverFlow">
-            <img class="item" src="img/productos/computadora.png" alt="Computadora">
-            <img class="item" src="img/productos/Heladera.png" alt="Heladera">
-            <img class="item" src="img/productos/tablet.png" alt="tablet">
-            <img class="item" src="img/productos/tv.png" alt="Televisor">
+        <section id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner contenedorCarrusel">
+                <div class="carousel-item active">
+                    <img src="img/productos/banner1.png" class="d-block w-100 fotosCarrusel" alt="computadora">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/productos/carrusel2.jpg" class="d-block w-100 fotosCarrusel" alt="Heladera">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/productos/carrusel3.jpg" class="d-block w-100 fotosCarrusel" alt="tablet">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
 
         <section class="indexDestacados">
@@ -90,6 +126,11 @@
             </li>
         </ul>
     </footer>
+
+    <!-- JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
