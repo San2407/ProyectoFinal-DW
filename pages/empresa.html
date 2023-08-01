@@ -7,71 +7,104 @@
     <title>Tech Hive-Empresa</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
-    <header>
-        <a href="../index.html"><img class="logo" src="../img/techhive-logo.png" alt="Logo de TechHive"></a>
-
-        <div class="barra">
-            <input class="busqueda" type="text" placeholder="Buscar productos">
-            <button type="submit">
-                <img class="imagenBusqueda" src="../img/lupa.png" alt="botón de búsqueda">
+<body class="container-fluid">
+    <header class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-
-        <div class="carritoDeCompras">
-            <a href="carrito.html"><img src="../img/shopping-cart.png" alt="carrito de compras"></a>
+            <a class="navbar-brand me-auto" href="../index.html"><img class="logo mb-2" src="../img/techhive-logo.png"
+                    alt="Logo de TechHive"></a>
+            <nav class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height:150px">
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="empresa.html">Empresa</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex busquedaCarrito">
+                <form class="d-flex barraDeBusqueda" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn colorBtn" type="submit"><img class="lupa" src="../img/lupa.png" alt=""></button>
+                </form>
+                <a class="nav-link" href="carrito.html"><img class="carritoDeCompras" src="../img/shopping-cart.png"
+                        alt="carrito de compras"></a>
+            </div>
         </div>
     </header>
 
-    <div>
-        <nav class="categorias">
-            <ul>
-                <li> <a href="productos.html">Productos</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="empresa.html">Empresa</a></li>
-            </ul>
-        </nav>
-    </div>
+    <main class="container-fluid ">
+            <section class="row">
+                <div class="col-lg-12 col-sm-12 ms-1 text-center">
+                    <h1>¿Quiénes Somos?</h1>
+                </div>
 
-    <main>
-        <section class="empresa">
-            <h1>¿Quiénes Somos?</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi nisi mollitia assumenda qui at
-                aut pariatur dolore quam illo! Porro cum illo saepe velit a minus quaerat, blanditiis atque. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Unde quia, commodi, sit officia fugiat repudiandae cumque
-                quisquam labore ipsam temporibus consequatur ipsa voluptates modi repellat obcaecati pariatur tempora
-                rem autem?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum eius aspernatur
-                ducimus unde nostrum obcaecati harum! Veritatis, quas. At veniam rerum cumque eligendi iure quisquam
-                corrupti aliquam aperiam quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima tempore,
-                deleniti quis dignissimos placeat laborum, dolores veritatis, numquam esse ex incidunt fugiat doloribus
-                hic nisi sed in tempora officiis ipsum!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti nihil aperiam aspernatur asperiores culpa. Inventore labore quis laborum sint culpa deleniti ea
-                modi velit. Tenetur voluptas ad recusandae officiis ullam!
-            </p>
-        </section>
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi nisi mollitia assumenda qui at
+                            aut pariatur dolore quam illo! Porro cum illo saepe velit a minus quaerat, blanditiis atque. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Unde quia, commodi, sit officia fugiat repudiandae cumque
+                            quisquam labore ipsam temporibus consequatur ipsa voluptates modi repellat obcaecati pariatur tempora
+                            rem autem?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum eius aspernatur
+                            ducimus unde nostrum obcaecati harum! Veritatis, quas. At veniam rerum cumque eligendi iure quisquam
+                            corrupti aliquam aperiam quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima tempore,
+                            deleniti quis dignissimos placeat laborum, dolores veritatis, numquam esse ex incidunt fugiat doloribus
+                            hic nisi sed in tempora officiis ipsum!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Deleniti nihil aperiam aspernatur asperiores culpa. Inventore labore quis laborum sint culpa deleniti ea
+                            modi velit. Tenetur voluptas ad recusandae officiis ullam!
+                        </p>
+                </div>
+    
+                <div class="col-lg-6 order-lg-1 cajaImgEmpresa">
+                    <img src="../img/empresa.jpg" alt="oficinas" class="imagenEmpresa">
+                </div>
+                </div>
+            </section>
     </main>
 
-    <footer>
-        <ul>
-            <li> <a href="../index.html">Inicio</a></li>
-            <li> <a href="productos.html">Productos</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li> <a href="empresa.html">Empresa</a></li>
-        </ul>
-        <ul>
-            <li>
-                <a href=""><img src="../img/redes/facebook.png" alt="icono de facebook"></a>
-            </li>
-            <li>
-                <a href=""><img src="../img/redes/twitter.png" alt="icono de twitter"></a>
-            </li>
-        </ul>
+    <footer class="border-top">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 d-flex align-items-center contenidoFooter ps-3 mt-1">
+                <div class="footerLogo d-md-block d-sm-none">
+                    <a href="../index.html"><img src="../img/techhive-logo.png" alt="Logo" class="logoFooter"></a>
+                </div>
+                <div class="ps-1 cajaLinks">
+                    <a class="linkFooter d-md-none d-sm" href="../index.html">Inicio</a>
+                    <a class="linkFooter" href="productos.html">Producto</a>
+                    <a class="linkFooter" href="contacto.html">Contacto</a>
+                    <a class="linkFooter" href="empresa.html">Empresa</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 copyright text-center mt-4 ps-1 cajaCopy">
+                &copy; 2023 TechHive. Todo los derechos reservados.
+            </div>
+            <div class="col-lg-3 col-sm-12 cajaSocials">
+                <a href="#"><img src="../img/redes/facebook.png" alt="logo de facebook"
+                        class="socialFooter mb-3 me-3"></a>
+                <a href="#"><img src="../img/redes/twitter.png" alt="logo de twitter"
+                        class="socialFooter mb-3 me-3"></a>
+            </div>
+        </div>
     </footer>
+    <!-- JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
