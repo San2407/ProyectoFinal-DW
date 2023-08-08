@@ -32,7 +32,7 @@
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="empresa.html">Empresa</a>
+                        <a class="nav-link" href="empresa.html">Empresa</a>
                     </li>
                 </ul>
             </nav>
@@ -47,88 +47,90 @@
         </div>
     </header>
 
-    <div>
-        <nav class="categorias">
-            <ul>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-            </ul>
-        </nav>
-    </div>
+    <main class="fondoCarrito vh-100">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <p><span class="h2">Tu Carrito </span><span class="h4">(1 articulo en tu carrito)</span></p>
+                        <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img src="../img/productos/ejemploCarrito.png"
+                                            class="img-fluid bordeImg" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Producto</p>
+                                            <p class="lead fw-normal mb-0">Heladera</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Cantidad</p>
+                                            <select class="lead fw-normal mb-0">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-center">
+                                        <div>
+                                            <p class="small text-muted mb-4 pb-2">Precio</p>
+                                            <p class="lead fw-normal mb-0">$799</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <main class="carritoCaja">
-        <h1>Tu Carrito</h1>
-            <section class="carrito">
-                <div class="carritoProducto">
-                    <h2>Producto</h2>
-                    <img src="../img/productos/ejemploCarrito.png" alt="Heladera" />
-                    <p>Nombre del Producto 1</p>
-                    <p>Descripción del producto</p>
-                </div>
+                        <div class="card mb-5">
+                            <div class="card-body p-4">
 
-                <div class="carritoPrecio">
-                    <h2>Precio</h2>
-                    <p>$50.00</p>
-                </div>
+                                <div class="float-end">
+                                    <p class="mb-0 me-5 d-flex align-items-center">
+                                        <span class="small text-muted me-2">Total:</span> <span
+                                            class="lead fw-normal">$799</span>
+                                    </p>
+                                </div>
 
-                <div class="carritoCantidad">
-                    <h2>Cantidad</h2>
-                    <select>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
+                            </div>
+                        </div>
 
-                <div class="carritoSubtotal">
-                    <h2>Subtotal</h2>
-                    <p>$100.00</p>
-                </div>
-            </section>
-
-            <section class="resumen">
-                <h2>Resumen</h2>
-                <p>Items: 2</p>
-                <p>Subtotal: $100.00</p>
-                <p>Envío: $10.00</p>
-                <p>Total: $110.00</p>
-                <button>Finalizar Compra</button>
-            </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="empresa.html">Empresa</a></li>
-        </ul>
-
-        <footer class="border-top">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 d-flex align-items-center contenidoFooter ps-3 mt-1">
-                    <div class="footerLogo d-md-block d-sm-none">
-                        <a href="../index.html"><img src="../img/techhive-logo.png" alt="Logo" class="logoFooter"></a>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-lg me-2 colorBtn">Continuar Comprando</button>
+                            <button type="button" class="btn btn-lg colorBtn">Pagar</button>
+                        </div>
                     </div>
-                    <div class="ps-1 cajaLinks">
-                        <a class="linkFooter d-md-none d-sm" href="../index.html">Inicio</a>
-                        <a class="linkFooter" href="productos.html">Producto</a>
-                        <a class="linkFooter" href="contacto.html">Contacto</a>
-                        <a class="linkFooter" href="empresa.html">Empresa</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-sm-12 copyright text-center mt-4 ps-1 cajaCopy">
-                    &copy; 2023 TechHive. Todo los derechos reservados.
-                </div>
-                <div class="col-lg-3 col-sm-12 cajaSocials">
-                    <a href="#"><img src="../img/redes/facebook.png" alt="logo de facebook"
-                            class="socialFooter mb-3 me-3"></a>
-                    <a href="#"><img src="../img/redes/twitter.png" alt="logo de twitter"
-                            class="socialFooter mb-3 me-3"></a>
                 </div>
             </div>
-        </footer>
+    </main>
+
+    <footer class="border-top">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 d-flex align-items-center contenidoFooter ps-3 mt-1">
+                <div class="footerLogo d-md-block d-sm-none">
+                    <a href="../index.html"><img src="../img/techhive-logo.png" alt="Logo" class="logoFooter"></a>
+                </div>
+                <div class="ps-1 cajaLinks">
+                    <a class="linkFooter d-md-none d-sm" href="../index.html">Inicio</a>
+                    <a class="linkFooter" href="productos.html">Producto</a>
+                    <a class="linkFooter" href="contacto.html">Contacto</a>
+                    <a class="linkFooter" href="empresa.html">Empresa</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 copyright text-center mt-4 ps-1 cajaCopy">
+                &copy; 2023 TechHive. Todo los derechos reservados.
+            </div>
+            <div class="col-lg-3 col-sm-12 cajaSocials">
+                <a href="#"><img src="../img/redes/facebook.png" alt="logo de facebook"
+                        class="socialFooter mb-3 me-3"></a>
+                <a href="#"><img src="../img/redes/twitter.png" alt="logo de twitter"
+                        class="socialFooter mb-3 me-3"></a>
+            </div>
+        </div>
+    </footer>
     <!-- JS BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
