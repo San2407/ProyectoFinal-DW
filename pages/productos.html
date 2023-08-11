@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos-Tech Hive</title>
-    <meta name="description" content="Tu destino para productos de alta calidad y tecnología de vanguardia.  Últimas novedades y ofertas increíbles. Tu elección confiable para satisfacer necesidades tecnológicas">
+    <meta name="description"
+        content="Tu destino para productos de alta calidad y tecnología de vanguardia.  Últimas novedades y ofertas increíbles. Tu elección confiable para satisfacer necesidades tecnológicas">
     <!-- favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <!-- CSS BS -->
@@ -49,80 +50,56 @@
     </header>
 
     <main>
-
-        <section class="container-fluid p-0">
-            <div class="row gx-1">
-                <h2 class="tituloProductos m-0">Productos Destacados</h2>
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card cartas">
-                        <img src="../img/productos/computadora.png" class="card-img-top" alt="Computadora">
-                        <div class="card-body">
-                            <h3 class="card-title">Computadora</h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn colorBtn w-100">Comprar</a>
-                        </div>
-                    </div>
+        <h2 class="tituloProductos m-0">ofertas Destacadas</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/productos/banner-productos.jpg" class="d-block w-100" alt="Oferta lanzamiento de galaxy z flip5, Z fold5 y tab S9 Ultra">
                 </div>
-
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card cartas">
-                        <img src="../img/productos/Heladera.png" class="card-img-top" alt="Heladera">
-                        <div class="card-body">
-                            <h3 class="card-title">Heladera</h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn colorBtn w-100">Comprar</a>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../img/productos/banner-productos2.jpg" class="d-block w-100" alt="Oferta celulares">
                 </div>
-
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card cartas">
-                        <img src="../img/productos/tablet.png" class="card-img-top" alt="tablet">
-                        <div class="card-body">
-                            <h3 class="card-title">Tablet</h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn colorBtn w-100">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card cartas">
-                        <img src="../img/productos/tv.png" class="card-img-top" alt="Televisor">
-                        <div class="card-body">
-                            <h3 class="card-title">Televisor</h3>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
-                            <a href="#" class="btn colorBtn w-100">Comprar</a>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../img/productos/banner-productos3.jpg" class="d-block w-100" alt="Oferta de una tablet galaxy tab S">
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <aside class="barra-navegacion">
             <ul>
-                <li><a href="">Todos los productos</a></li>
-                <li><a href="">Computadoras</a></li>
-                <li><a href="">Heladeras</a></li>
-                <li><a href="">TVs</a></li>
-                <li><a href="">Tablets</a></li>
+                <li> 
+                    <button id="todos">Todos los productos </button>
+                <li> 
+                    <button id="cpus" class="">Computadoras</button>
+                <li>
+                    <button id="heladeras">Heladeras</button>
+                <li>
+                    <button id="tvs" class="">TVs</button>
+                <li>
+                    <button id="tablets" class="">Tablets</button>
             </ul>
         </aside>
     </main>
 
-    <footer class="border-top">
+    <footer class="border-top container-fluid">
         <div class="row">
             <div class="col-lg-4 col-sm-12 d-flex align-items-center contenidoFooter ps-3 mt-1">
                 <div class="footerLogo d-md-block d-sm-none d-none">
@@ -151,4 +128,5 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

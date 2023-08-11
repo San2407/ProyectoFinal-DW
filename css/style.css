@@ -209,7 +209,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.barra-navegacion a {
+.barra-navegacion button{
     display: block;
     color: #333;
     text-decoration: none;
