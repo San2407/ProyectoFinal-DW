@@ -88,71 +88,27 @@
             <nav class="barra-navegacion">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <button class="nav-link active botonCatalogo">Todos los productos</button>
+                        <button id="todos" class="nav-link active botonCatalogo">Todos los productos</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link botonCatalogo">Computadoras</button>
+                        <button id="computadoras" class="nav-link botonCatalogo">Computadoras</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link botonCatalogo">Heladeras</button>
+                        <button id="heladeras" class="nav-link botonCatalogo">Heladeras</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link botonCatalogo">Televisores</button>
+                        <button id="televisores" class="nav-link botonCatalogo">Televisores</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link botonCatalogo">Tablets</button>
+                        <button id="tablets" class="nav-link botonCatalogo">Tablets</button>
                     </li>
                 </ul>
             </nav>
             <div class="catalogoProductos">
                 <div class="container-fluid">
-                    <h2>Todos los productos</h2>
-                    <div class="row gx-1">
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card cartasProductos">
-                                <img src="../img/productos/computadora.png" class="card-img-top mw-100"
-                                    alt="Computadora">
-                                <div class="card-body">
-                                    <h3 class="card-title">$517.990</h3>
-                                    <p class="card-text">Computadora de escritorio Intel Core I5 32gb 960 Ssd</p>
-                                    <a href="#" class="btn colorBtn w-100">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card cartasProductos">
-                                <img src="../img/productos/Heladera.png" class="card-img-top mw-100" alt="Heladera">
-                                <div class="card-body h-100">
-                                    <h3 class="card-title">$865.000</h3>
-                                    <p class="card-text"> Heladera Midea Side By Side RF-S18</p>
-                                    <a href="#" class="btn colorBtn w-100">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card cartasProductos">
-                                <img src="../img/productos/tablet.png" class="card-img-top mw-100" alt="tablet">
-                                <div class="card-body">
-                                    <h3 class="card-title">$419.546</h3>
-                                    <p class="card-text">Tablet Sony Xperia Z 16 GB ROM 2 GB RAM WiFi original Android
-                                    </p>
-                                    <a href="#" class="btn colorBtn w-100">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card cartasProductos">
-                                <img src="../img/productos/tv.png" class="card-img-top mw-100" alt="Televisor">
-                                <div class="card-body">
-                                    <h3 class="card-title">$184.999</h3>
-                                    <p class="card-text">Smart TV 4K UHD Samsung 50" UN50AU7000</p>
-                                    <a href="#" class="btn colorBtn w-100">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 id="tituloProductos">Todos los productos</h2>
+                    <div id="contenedorProductos" class="row gx-1">
+                        <!-- Esto se rellenara con JS -->
                     </div>
                 </div>
             </div>
@@ -184,6 +140,8 @@
             </div>
         </div>
     </footer>
+    <!-- Mi JS -->
+    <script src="../js/productos.js"></script>
     <!-- JS BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
