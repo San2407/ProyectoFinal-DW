@@ -156,47 +156,17 @@ footer {
 
 
 /* Página Producto */
-.productosDestacados {
+
+.catalogo {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    flex-direction: column;
 }
-
-.producto {
-    flex-basis: calc(25% - 20px);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.producto img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
-
-.producto p {
-    margin: 10px 0;
-}
-
-.producto button {
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    cursor: pointer;
-}
-
 
 .barra-navegacion {
-    background-color: #fff;
     color: #fff;
-    padding: 10px;
-    margin-bottom: 40px;
+    padding:1.5rem;
+    padding-bottom: 0;
+    background-color: black
 }
 
 .barra-navegacion ul {
@@ -205,27 +175,43 @@ footer {
     margin: 0;
 }
 
-.barra-navegacion li {
-    margin-bottom: 10px;
-}
-
-.barra-navegacion button{
-    display: block;
-    color: #333;
+.botonCatalogo {
+    background-color: transparent;
+    border: 0;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
-    background-color: #fff;
-    border: 2px solid #333;
-    border-radius: 5px;
+    background-color: black;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.barra-navegacion a:hover {
+.botonCatalogo:hover {
     background-color: #333;
     color: #fff;
 }
 
+.botonCatalogo.active {
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: relative;
+}
+
+.catalogoProductos {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+.cartasProductos {
+    border: #000000 1px solid;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 18rem;
+}
 
 /* Página Empresa */
 
