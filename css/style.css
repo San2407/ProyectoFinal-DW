@@ -18,7 +18,7 @@ ul {
 /* Header */
 
 header {
-    background-color:#FFD700;
+    background-color: #FFD700;
     border-bottom: 1px solid black;
 }
 
@@ -26,10 +26,16 @@ header {
     list-style: none;
 }
 
+
+.logoContainer {
+    margin-right: auto;
+}
+
 .logo {
     width: 6.25rem;
     height: auto;
     padding-left: 5px;
+
 }
 
 .colorBtn {
@@ -41,8 +47,9 @@ header {
 .btn {
     color: black;
 }
+
 .btn:hover {
-    background-color:#FFF44F ;
+    background-color: #FFF44F;
     border-color: black;
 
 }
@@ -113,13 +120,13 @@ main {
 }
 
 footer {
-    background-color:#FFD700;
+    background-color: #FFD700;
     margin-top: auto;
 }
 
 /* Cartas */
 
-.cartas{
+.cartas {
     border: #000000 1px solid;
     width: 18rem;
     margin-top: 0.5rem;
@@ -164,7 +171,7 @@ footer {
 
 .barra-navegacion {
     color: #fff;
-    padding:1rem;
+    padding: 1rem;
     padding-bottom: 0;
     background-color: black
 }
@@ -325,9 +332,14 @@ textarea {
     background-color: #E8E8E8;
 }
 
-
-
 @media (min-width: 349px) {
+
+    .logoContainer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     .footerLogo {
         display: none;
     }
