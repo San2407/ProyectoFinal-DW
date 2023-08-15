@@ -1,0 +1,28 @@
+/*Footer*/
+.linkFooter {
+    color: #444444;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.logoFooter {
+    width: 100px;
+    height: auto;
+}
+
+.cajaSocials {
+    text-align: end;
+}
+
+.socialFooter {
+    height: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: $colorMain;
+    margin-top: auto;
+}

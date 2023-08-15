@@ -1,0 +1,51 @@
+/*Header*/
+header {
+    background-color: $colorMain;
+    border-bottom: 1px solid black;
+}
+
+.logoContainer {
+    margin-right: auto;
+}
+
+.logo {
+    width: 6.25rem;
+    height: auto;
+    padding-left: 5px;
+}
+
+.colorBtn {
+    background-color: $colorMainLight;
+    border-color: black;
+    color: black;
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    background-color: $colorMainLight;
+    border-color: black;
+}
+
+.lupa {
+    width: 1.563rem;
+    height: 1.563rem;
+}
+
+.barraDeBusqueda {
+    margin-right: 1.875rem;
+}
+
+.carritoDeCompras {
+    width: 10vh;
+    max-width: 2.5rem;
+    margin-right: 0.938rem;
+}
+
+.busquedaCarrito {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}

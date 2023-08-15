@@ -1,0 +1,65 @@
+/*Contacto*/
+.formulario {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linea1,
+.correoElectronico {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 10px;
+
+    input {
+        flex: 1;
+    }
+}
+
+label {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.asunto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.textArea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    label {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.buttonForm {
+    gap: 10px;
+    display: flex;
+
+    button {
+        width: 100px;
+        height: 44px;
+        padding: 10px 20px;
+        font-size: 12px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
