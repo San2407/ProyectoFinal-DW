@@ -75,19 +75,6 @@ header {
     padding: 0.5rem 1rem;
 }
 
-/* BODY */
-body {
-    position: relative;
-    padding-bottom: 30px;
-    min-height: 100vh;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.container-fluid {
-    max-width: 100%;
-}
 
 /* Main */
 main {
@@ -237,8 +224,8 @@ footer {
 .imagenEmpresa {
     max-width: 100%;
     height: auto;
-    max-height: 384px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -353,6 +340,15 @@ textarea {
 
     .barra-navegacion {
         padding-right: 0;
+    }
+
+    .categorias {
+        position: sticky;
+        top: 0;
+    }
+
+    .cartasProductos {
+        max-width: 10rem;
     }
 
     main {
