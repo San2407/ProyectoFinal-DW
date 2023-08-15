@@ -312,6 +312,15 @@ textarea {
   main {
     min-height: auto;
   }
+  .imagenCarrito {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .productoCarrito {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 989px) {
   .contenidoFooter {
@@ -326,6 +335,12 @@ textarea {
   }
   .imagenEmpresa {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .productoCarrito {
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
