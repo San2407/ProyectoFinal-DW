@@ -126,7 +126,7 @@ footer {
 
 /* Cartas */
 
-.cartas {
+.cartas{
     border: #000000 1px solid;
     width: 18rem;
     margin-top: 0.5rem;
@@ -183,7 +183,6 @@ footer {
 }
 
 .botonCatalogo {
-    background-color: transparent;
     border: 0;
     color: white;
     text-decoration: none;
@@ -332,22 +331,37 @@ textarea {
     background-color: #E8E8E8;
 }
 
-@media (min-width: 349px) {
+@media (min-width: 349px) and (max-width:900px){
 
     .logoContainer {
         margin-left: auto;
         margin-right: auto;
     }
 
-
     .footerLogo {
         display: none;
+    }
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: 2fr 9fr;
+    }
+
+    .catalogoProductos {
+        padding: 0;
+    }
+
+    .barra-navegacion {
+        padding-right: 0;
+    }
+
+    main {
+        min-height: auto;
     }
 }
 
 
 @media (max-width: 989px) {
-
 
     .contenidoFooter {
         text-align: center;

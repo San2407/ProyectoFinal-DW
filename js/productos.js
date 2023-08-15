@@ -42,6 +42,27 @@ const productos = [
             id: "tablets"
         },
         precio: 419.546
+    },
+    {
+        id: "tablets",
+        titulo: "Galaxy Tab S9 Ultra con Funda y Teclado",
+        imagen: "../img/productos/galaxy-tab-s9.png",
+        categoria: {
+            nombre: "Tablets",
+            id: "tablets"
+        },
+        precio: 898.999
+    },
+    //CELULARES
+    {
+        id: "celulares",
+        titulo: "Galaxy Z Fold5 Phantom Black 512gb",
+        imagen: "../img/productos/galaxy-fold5.jpg",
+        categoria: {
+            nombre: "Celulares",
+            id: "celulares"
+        },
+        precio: 919.546
     }
 ];
 
