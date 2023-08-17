@@ -1,14 +1,12 @@
 /*Contacto*/
 .formulario {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
+    @include flexDireccion(column);
 }
 
 .linea1,
 .correoElectronico {
-    display: flex;
-    flex-direction: row;
+    @include flexDireccion(row);
     margin-bottom: 10px;
     gap: 10px;
 
@@ -39,8 +37,7 @@ textarea {
 }
 
 .checkBox {
-    display: flex;
-    flex-direction: row;
+    @include flexDireccion(row);
     align-items: center;
 
     label {

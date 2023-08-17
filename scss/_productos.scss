@@ -1,7 +1,6 @@
 /*Productos*/
 .catalogo {
-    display: flex;
-    flex-direction: column;
+    @include flexDireccion(column);
 }
 
 .barra-navegacion {
@@ -49,7 +48,7 @@
 }
 
 .cartasProductos {
-    border: black 1px solid;
+    @include bordeComun;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     max-width: 18rem;

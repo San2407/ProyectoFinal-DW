@@ -1,7 +1,7 @@
 /* Empresa */
 .cajaEmpresa {
     background-color: $colorMainLight;
-    border: 2px solid #333;
+    @include bordeComun;
     border-radius: 10px;
 }
 

@@ -16,7 +16,7 @@ header {
 
 .colorBtn {
     background-color: $colorMainLight;
-    border-color: black;
+    @include bordeComun();
     color: black;
 }
 

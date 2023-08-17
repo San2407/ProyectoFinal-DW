@@ -13,12 +13,21 @@ ul {
 }
 
 /*Estilos Globales*/
-.bordeImg {
+@mixin bordeComun {
     border: 1px black solid;
 }
 
+@mixin flexDireccion ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+.bordeImg {
+    @include bordeComun();
+}
+
 .cartas {
-    border: black 1px solid;
+    @include bordeComun();
     width: 18rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;

@@ -19,7 +19,7 @@ ul {
 }
 
 .cartas {
-  border: black 1px solid;
+  border: 1px black solid;
   width: 18rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -52,7 +52,7 @@ header {
 
 .colorBtn {
   background-color: #fff44f;
-  border-color: black;
+  border: 1px black solid;
   color: black;
 }
 
@@ -188,7 +188,7 @@ footer {
 }
 
 .cartasProductos {
-  border: black 1px solid;
+  border: 1px black solid;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   max-width: 18rem;
@@ -197,7 +197,7 @@ footer {
 /* Empresa */
 .cajaEmpresa {
   background-color: #fff44f;
-  border: 2px solid #333;
+  border: 1px black solid;
   border-radius: 10px;
 }
 
@@ -335,7 +335,7 @@ textarea {
     text-align: center;
   }
   .cajaImgEmpresa {
-    display: none !important;
+    display: none;
   }
   .imagenEmpresa {
     display: none;
