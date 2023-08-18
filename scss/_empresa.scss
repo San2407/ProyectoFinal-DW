@@ -1,10 +1,4 @@
 /* Empresa */
-.cajaEmpresa {
-    background-color: $colorMainLight;
-    @include bordeComun;
-    border-radius: 10px;
-}
-
 .cajaImgEmpresa {
     display: flex;
     justify-content: center;

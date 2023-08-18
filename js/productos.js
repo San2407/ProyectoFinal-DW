@@ -81,7 +81,7 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("col-xl-4", "col-md-6", "col-sm-12");
         div.innerHTML = `
-            <div class="card cartasProductos">
+            <div class="card cartasProductos h-100">
                 <img src="${producto.imagen}" class="card-img-top mw-100" alt="${producto.titulo}">
                 <div class="card-body">
                     <h3 class="card-title">$${producto.precio}</h3>
