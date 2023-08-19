@@ -57,6 +57,11 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
+    .info {
+        a,p {
+            font-size: 12px;
+        }
+    }
 }
 
 @media (max-width: 989px) {
@@ -76,11 +81,27 @@
     .imagenEmpresa {
         display: none;
     }
+
+    .mapa{
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: 768px) {
     .productoCarrito{
         padding-bottom: 0.5rem;
         margin-bottom: 1.5rem;
+    }
+
+    .info{
+        .infoBox{
+            div{
+                align-items: center;
+                span{
+                    margin-right: 10px;
+                    margin-left: 8px;
+                }
+            }
+        }
     }
 }

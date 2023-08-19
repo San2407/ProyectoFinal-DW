@@ -1,39 +1,7 @@
 /*Contacto*/
+
 .formulario {
-    padding: 10px;
-    @include flexDireccion(column);
-}
-
-.linea1,
-.correoElectronico {
-    @include flexDireccion(row);
-    margin-bottom: 10px;
-    gap: 10px;
-
-    input {
-        flex: 1;
-    }
-}
-
-label {
-    margin-right: 10px;
-}
-
-textarea {
-    width: 100%;
-    resize: vertical;
-}
-
-.asunto {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-}
-
-.textArea {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: white;
 }
 
 .checkBox {
@@ -46,17 +14,78 @@ textarea {
     }
 }
 
-.buttonForm {
-    gap: 10px;
+.info {
+    background-color: black;
+
+    h2{
+        font-size: 1.3rem;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+
+    a, p {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    .iconos {
+        color: white;
+    }
+
+    .infoBox {
+        @include flexDireccion(column);
+        margin-bottom: 10px;
+        div {
+            display: flex;
+            align-items: center margin-bottom 10px;
+
+            span {
+                min-width: 30px;
+                height: 30px;
+                background-color: #e7d352;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                border-radius: 50%;
+                margin-right: 15px;
+                margin-left: 15px;
+                margin-bottom: 5px;
+            }
+        }
+
+        ul {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.sml {
+    margin-top: 10px;
     display: flex;
 
-    button {
-        width: 100px;
-        height: 44px;
-        padding: 10px 20px;
-        font-size: 12px;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    li {
+        margin-right: 15px;
+
+        a {
+            font-size: 1.5rem;
+            color: #ccc;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}    
+
+.mapa {
+    padding: 0;
+    height: 200px;
+    iframe{
+        width: 100%;
+        height: 100%;
     }
 }
