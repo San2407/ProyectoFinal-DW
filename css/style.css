@@ -189,9 +189,12 @@ footer {
 
 .cartasProductos {
   border: 1px black solid;
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   max-width: 18rem;
+}
+
+.card-img-top {
+  object-fit: cover;
 }
 
 /* Empresa */
@@ -312,9 +315,6 @@ footer {
   .categorias {
     position: sticky;
     top: 0;
-  }
-  .cartasProductos {
-    max-width: 10rem;
   }
   .carousel .carousel-item {
     height: 125px;
