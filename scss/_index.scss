@@ -23,3 +23,74 @@
     color: white;
     padding: 1rem;
 }
+
+.categoriaIndex{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #E8E8E8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cartasIndex{
+    max-width: 12rem;
+    padding: 0px 15px;
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    img{
+        background-color: $colorMainLight;
+        border-radius: 50%;
+    }
+    a{  
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.contenedorNews{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    padding: 3rem;
+    h4{
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+.newsForm{
+    display: flex;
+    width: 40%;
+    input{
+        height: 3.125rem;
+        padding: 0 1.25em;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+    button{
+        height: 3.125rem;
+        border: 1px solid transparent;
+        background-color: $colorMainLight;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px 30px;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

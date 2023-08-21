@@ -30,7 +30,7 @@ ul {
 }
 
 /*Main*/
-main {
+.mainContacto {
   min-height: 100vh;
 }
 
@@ -138,6 +138,76 @@ footer {
   font-weight: bold;
   color: white;
   padding: 1rem;
+}
+
+.categoriaIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #E8E8E8;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cartasIndex {
+  max-width: 12rem;
+  padding: 0px 15px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cartasIndex img {
+  background-color: #fff44f;
+  border-radius: 50%;
+}
+.cartasIndex a {
+  color: black;
+  text-decoration: none;
+}
+
+.contenedorNews {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  padding: 3rem;
+}
+.contenedorNews h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.contenedorNews p {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.newsForm {
+  display: flex;
+  width: 40%;
+}
+.newsForm input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.newsForm button {
+  height: 3.125rem;
+  border: 1px solid transparent;
+  background-color: #fff44f;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /*Productos*/
@@ -294,7 +364,7 @@ footer {
 }
 
 /*Media Queries*/
-@media (min-width: 349px) and (max-width: 900px) {
+@media (min-width: 349px) and (max-width: 760px) {
   .logoContainer {
     margin-left: auto;
     margin-right: auto;
@@ -340,6 +410,29 @@ footer {
   }
   .info a, .info p {
     font-size: 12px;
+  }
+  .categoriaIndex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedorNews {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .contenedorNews h4 {
+    font-size: 22px;
+  }
+  .contenedorNews p {
+    font-size: 14px;
+  }
+  .newsForm {
+    width: 100%;
+  }
+  .newsForm input {
+    height: 2.125rem;
+  }
+  .newsForm button {
+    height: 2.125rem;
+    padding: 7px 15px;
   }
 }
 @media (max-width: 989px) {

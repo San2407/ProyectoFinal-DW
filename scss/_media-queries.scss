@@ -1,5 +1,5 @@
 /*Media Queries*/
-@media (min-width: 349px) and (max-width: 900px) {
+@media (min-width: 349px) and (max-width:760px) { 
     .logoContainer {
         margin-left: auto;
         margin-right: auto;
@@ -58,7 +58,34 @@
             font-size: 12px;
         }
     }
+
+    .categoriaIndex{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedorNews{
+        padding: 40px 20px;
+        text-align: center;
+        h4{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .newsForm{
+        width: 100%;
+        input{
+            height: 2.125rem;
+        }
+        button{
+            height: 2.125rem;
+            padding: 7px 15px;
+        }
+    }
 }
+
+
 
 @media (max-width: 989px) {
     .contenidoFooter {
@@ -100,4 +127,8 @@
             }
         }
     }
+}
+
+@media (max-width:768px){
+    
 }
