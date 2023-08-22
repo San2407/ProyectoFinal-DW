@@ -25,13 +25,8 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-.fondoCarrito {
+.fondoColor {
   background-color: #E8E8E8;
-}
-
-/*Main*/
-.mainContacto {
-  min-height: 100vh;
 }
 
 /*Header*/
@@ -433,6 +428,9 @@ footer {
   .newsForm button {
     height: 2.125rem;
     padding: 7px 15px;
+  }
+  .lead.fw-normal.mb-0.w-25 {
+    width: auto;
   }
 }
 @media (max-width: 989px) {
